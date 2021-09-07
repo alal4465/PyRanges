@@ -54,9 +54,9 @@ namespace PyRanges {
 	};
 
 	template<std::integral T>
-	class Range final : public PyIterable<RangeIterator<T>> {
+	class range final : public PyIterable<RangeIterator<T>> {
 	public:
-		inline constexpr Range(T start, T dest, std::int64_t inc = 1) :
+		inline constexpr range(T start, T dest, std::int64_t inc = 1) :
 			start_(start),
 			dest_(calc_dest_limit(start, dest, inc)),
 			inc_(inc)
@@ -66,7 +66,7 @@ namespace PyRanges {
 			}
 		}
 
-		inline constexpr explicit Range(T dest) : Range(0, dest) {}
+		inline constexpr explicit range(T dest) : range(0, dest) {}
 
 		using iterator = RangeIterator<T>;
 

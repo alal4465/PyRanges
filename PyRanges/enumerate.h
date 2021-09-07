@@ -1,12 +1,12 @@
 #pragma once
-#include "pipes.h"
 #include <utility>
 #include <type_traits>
 #include <iterator>
 #include <vector>
+#include "PipeFunc.h"
 
 namespace PyRanges {
-	struct Enumerate {
+	struct Enumerate: public PipeFunc {
 		template <PyIterableOrRange TContainer>
 		constexpr inline auto operator() (const TContainer& container) const {
 			using InnerType = typename std::remove_reference_t<decltype(*std::begin(container))>;

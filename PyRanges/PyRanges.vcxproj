@@ -145,9 +145,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enumerate.h" />
-    <ClInclude Include="pipes.h" />
+    <ClInclude Include="PipeFunc.h" />
     <ClInclude Include="PyIterable.h" />
     <ClInclude Include="Range.h" />
+    <ClInclude Include="zip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

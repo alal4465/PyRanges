@@ -23,13 +23,16 @@
     <ClInclude Include="enumerate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pipes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PyIterable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeFunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
