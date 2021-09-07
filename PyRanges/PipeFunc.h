@@ -18,5 +18,7 @@ namespace PyRanges {
 		friend constexpr inline auto operator| (const TContainer& container, TPred pred) {
 			return pred(container);
 		}
+
+		constexpr inline virtual ~PipeFunc() = default;
 	};
 }

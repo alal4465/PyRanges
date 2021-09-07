@@ -7,7 +7,7 @@
 
 namespace PyRanges {
 	template<std::integral T>
-	class RangeIterator : public PyIterator<T> {
+	class RangeIterator final : public PyIterator<T> {
 	public:
 		using self_type = RangeIterator;
 		using PyIterator<T>::pointer;

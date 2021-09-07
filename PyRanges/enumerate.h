@@ -6,7 +6,7 @@
 #include "PipeFunc.h"
 
 namespace PyRanges {
-	struct Enumerate: public PipeFunc {
+	struct Enumerate final : public PipeFunc {
 		template <PyIterableOrRange TContainer>
 		constexpr inline auto operator() (const TContainer& container) const {
 			using InnerType = typename std::remove_reference_t<decltype(*std::begin(container))>;

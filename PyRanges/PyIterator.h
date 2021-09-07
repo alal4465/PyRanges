@@ -12,5 +12,7 @@ namespace PyRanges {
 		using pointer = T*;
 		using iterator_category = std::forward_iterator_tag;
 		using difference_type = std::size_t;
+
+		constexpr inline virtual ~PyIterator() = default;
 	};
 }
