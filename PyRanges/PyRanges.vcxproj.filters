@@ -26,10 +26,7 @@
     <ClInclude Include="PyIterable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Range.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="zip.h">
+    <ClInclude Include="range.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PipeFunc.h">

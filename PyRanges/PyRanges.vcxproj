@@ -148,8 +148,7 @@
     <ClInclude Include="PipeFunc.h" />
     <ClInclude Include="PyIterable.h" />
     <ClInclude Include="PyIterator.h" />
-    <ClInclude Include="Range.h" />
-    <ClInclude Include="zip.h" />
+    <ClInclude Include="range.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
