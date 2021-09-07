@@ -3,7 +3,7 @@ Me wasting time with writing some itertools esque functionality in C++ 20's rang
 
 Stuff like:
 ```cpp
-for (auto&& [i, n] : PyRanges::Range(3, 5) | PyRanges::enumerate) {
+for (auto&& [i, n] : PyRanges::range(3, 5) | PyRanges::enumerate) {
   std::cout << '[' << i << ", " << n << "]\n";
 }
 /*
