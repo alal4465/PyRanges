@@ -3,17 +3,15 @@
 #include <cstdint>
 #include <algorithm>
 #include "PyIterable.h"
+#include "PyIterator.h"
 
 namespace PyRanges {
 	template<std::integral T>
-	class RangeIterator {
+	class RangeIterator : public PyIterator<T> {
 	public:
 		using self_type = RangeIterator;
-		using value_type = T;
-		using reference = T&;
-		using pointer = T*;
-		using iterator_category = std::forward_iterator_tag;
-		using difference_type = std::size_t;
+		using PyIterator<T>::pointer;
+		using PyIterator<T>::value_type;
 
 		constexpr inline RangeIterator(T cur, T dest, std::int64_t inc) noexcept :
 			cur_(cur),

@@ -35,5 +35,8 @@
     <ClInclude Include="PipeFunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PyIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

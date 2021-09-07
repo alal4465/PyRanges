@@ -147,6 +147,7 @@
     <ClInclude Include="enumerate.h" />
     <ClInclude Include="PipeFunc.h" />
     <ClInclude Include="PyIterable.h" />
+    <ClInclude Include="PyIterator.h" />
     <ClInclude Include="Range.h" />
     <ClInclude Include="zip.h" />
   </ItemGroup>
