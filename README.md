@@ -11,3 +11,5 @@ for (auto&& [i, n] : PyRanges::range(3, 5) | PyRanges::enumerate) {
 [1, 4]
 */
 ```
+
+**Edit:** I just found out this is basically just a worst version of [cppitertools](https://github.com/ryanhaining/cppitertools).   
