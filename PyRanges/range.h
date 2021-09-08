@@ -60,7 +60,7 @@ namespace PyRanges {
 			inc_(inc)
 		{
 			if (inc_ == 0) {
-				throw std::runtime_error("Range() arg 3 must not be zero");
+				throw std::runtime_error("range() arg 3 must not be zero");
 			}
 		}
 
