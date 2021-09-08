@@ -14,7 +14,6 @@ namespace PyRanges {
 
 	struct PipeFunc {
 		template <PyIterableOrRange TContainer, ProcessFunction<TContainer> TPred> 
-		requires std::invocable<TPred, TContainer>
 		friend constexpr inline auto operator| (const TContainer& container, TPred pred) {
 			return pred(container);
 		}
