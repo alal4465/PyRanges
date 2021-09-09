@@ -14,7 +14,7 @@ int main() {
         std::cout << '[' << i << ", " << n << "]\n";
     }
 
-    for (auto&& [a, b] :PyRanges::zip(std::vector{ "a", "b" }, std::vector{ 1, 2, 3 })) {
+    for (auto&& [a, b] : PyRanges::zip(std::vector{ "a", "b" }, std::vector{ 1, 2, 3 })) {
         std::cout << '[' << a << ", " << b << "]\n";
     }
 }
