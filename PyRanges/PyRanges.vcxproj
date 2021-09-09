@@ -149,6 +149,7 @@
     <ClInclude Include="PyIterable.h" />
     <ClInclude Include="PyIterator.h" />
     <ClInclude Include="range.h" />
+    <ClInclude Include="zip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

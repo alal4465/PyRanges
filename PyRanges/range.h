@@ -9,9 +9,12 @@ namespace PyRanges {
 	template<std::integral T>
 	class RangeIterator final : public PyIterator<T> {
 	public:
-		using self_type = RangeIterator;
+		using self_type = RangeIterator<T>;
 		using PyIterator<T>::pointer;
 		using PyIterator<T>::value_type;
+		using PyIterator<T>::reference;
+		using PyIterator<T>::iterator_category;
+		using PyIterator<T>::difference_type;
 
 		constexpr inline RangeIterator(T cur, T dest, std::int64_t inc) noexcept :
 			cur_(cur),
