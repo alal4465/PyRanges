@@ -96,7 +96,7 @@ namespace PyRanges {
 	};
 
 	template <typename ... T>
-	auto zip(T && ... t) {
+	constexpr inline auto zip(T && ... t) {
 		return ZipImpl<T ...>{std::forward<T>(t)...};
 	}
 }
